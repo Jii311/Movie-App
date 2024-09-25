@@ -5,18 +5,21 @@ class MyButton extends StatelessWidget {
   final String label;
   final double fontSize;
   final EdgeInsetsGeometry contentPadding;
+  final EdgeInsetsGeometry margin;
 
   const MyButton(
       {super.key,
       required this.onPressed,
       required this.label,
       required this.fontSize,
-      required this.contentPadding});
+      required this.contentPadding,
+      required this.margin});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 320,
+      margin: margin,
+      width: 340,
       padding: contentPadding,
       child: ElevatedButton(
           onPressed: onPressed,

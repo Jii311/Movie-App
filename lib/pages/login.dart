@@ -24,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 20, top: 20),
+              padding: EdgeInsets.only(left: 20, top: 40),
               child: Row(
                 children: [
                   SvgPicture.asset(
@@ -76,6 +76,7 @@ class _LoginPageState extends State<LoginPage> {
               label: 'Login',
               fontSize: 18,
               contentPadding: EdgeInsets.fromLTRB(0, 12, 0, 25),
+              margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
             )
           ],
         ),

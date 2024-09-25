@@ -8,6 +8,7 @@ class ProfileMenu extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff222831),
       appBar: AppBar(
+        toolbarHeight: 45,
         centerTitle: true,
         backgroundColor: Color(0xff222831),
         title: Image.asset(

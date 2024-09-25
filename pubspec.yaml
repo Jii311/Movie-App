@@ -2,7 +2,7 @@ name: movie_app
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
@@ -55,7 +54,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -73,6 +71,16 @@ flutter:
     - assets/carousel/jurassic-park.png
     - assets/carousel/lotr.png
     - assets/carousel/the-marvels.png
+    - assets/gridview/18x2.png
+    - assets/gridview/20th-century.png
+    - assets/gridview/avenger-iw.png
+    - assets/gridview/black-panther-potrait.png
+    - assets/gridview/even-if-this-love-dissapears-tonight.png
+    - assets/gridview/interstellar-potrait.png
+    - assets/gridview/joker.png
+    - assets/gridview/oppenheimer.png
+    - assets/gridview/spider-man-ats.png
+    - assets/gridview/star-wars.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

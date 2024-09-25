@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => LoginPage()),
+        GetPage(name: '/', page: () => DashboardPage()),
         GetPage(name: '/dashboard', page: () => DashboardPage()),
       ],
     );

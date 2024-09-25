@@ -19,7 +19,7 @@ class MyTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 320,
+      width: 340,
       margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
       child: TextField(
           cursorHeight: 20,
