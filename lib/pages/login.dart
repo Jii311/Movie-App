@@ -13,6 +13,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool isObscure = true;
+
   final TextEditingController _usercontroller = TextEditingController();
   final TextEditingController _passcontroller = TextEditingController();
 
@@ -46,12 +48,17 @@ class _LoginPageState extends State<LoginPage> {
               isObscure: false,
               hintText: 'Username',
               labelText: 'Username',
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
+              icon: Icons.person_outline_sharp,
             ),
             MyTextField(
-                controller: _passcontroller,
-                isObscure: true,
-                hintText: 'Password',
-                labelText: 'Password'),
+              controller: _passcontroller,
+              isObscure: true,
+              hintText: 'Password',
+              labelText: 'Password',
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
+              icon: Icons.shield_outlined,
+            ),
             MyButton(
               onPressed: () {
                 if (_usercontroller.text == 'admin' &&

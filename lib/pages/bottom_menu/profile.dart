@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/widget/carousel.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({super.key});
@@ -15,6 +16,13 @@ class ProfileMenu extends StatelessWidget {
           'assets/logo.png',
           fit: BoxFit.fitHeight,
           height: 40,
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [],
+          ),
         ),
       ),
     );

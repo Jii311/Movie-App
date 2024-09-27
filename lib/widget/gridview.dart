@@ -43,6 +43,10 @@ class MyGridView extends StatelessWidget {
         rating: '9.0'),
   ];
 
+  MyGridView({
+    super.key,
+  });
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -54,7 +58,7 @@ class MyGridView extends StatelessWidget {
             crossAxisCount: 2,
             mainAxisSpacing: 16,
             crossAxisSpacing: 16,
-            mainAxisExtent: 310),
+            mainAxisExtent: 285),
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
@@ -73,23 +77,26 @@ class MyGridView extends StatelessWidget {
                     child: Image.asset(gridViewList[index].image),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(5, 5, 5, 0),
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    gridViewList[index].title,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xffEEEEEE),
+                Flexible(
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(5, 5, 5, 0),
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      gridViewList[index].title,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xffEEEEEE),
+                      ),
                     ),
                   ),
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(5, 5, 2, 0),
+                      margin: EdgeInsets.fromLTRB(5, 5, 2, 5),
                       child: Icon(
                         Icons.star,
                         color: Colors.amber,
@@ -97,8 +104,7 @@ class MyGridView extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 5, 5, 0),
-                      alignment: Alignment.bottomLeft,
+                      margin: EdgeInsets.fromLTRB(0, 5, 5, 5),
                       child: Text(
                         gridViewList[index].rating,
                         style: TextStyle(

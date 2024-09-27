@@ -81,6 +81,18 @@ flutter:
     - assets/gridview/oppenheimer.png
     - assets/gridview/spider-man-ats.png
     - assets/gridview/star-wars.png
+    - assets/listview/1917.png
+    - assets/listview/barbie.png
+    - assets/listview/black-panther.png
+    - assets/listview/captain-america-tws.png
+    - assets/listview/interstellar.png
+    - assets/listview/jurassic-park.png
+    - assets/listview/lotr.png
+    - assets/listview/the-marvels.png
+    - assets/listview/black-adam.png
+    - assets/listview/jumanji.png
+    - assets/listview/kong.png
+    - assets/listview/shang-chi.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

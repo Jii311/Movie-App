@@ -22,20 +22,24 @@ class HomeMenu extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Expanded(
-          child: Container(
-            child: Column(
-              children: [
-                MyDivider(),
-                MyCarousel(),
-                MyDivider(),
-                MyText(
-                    data: 'Recommendation',
-                    size: 18,
-                    margin: EdgeInsets.fromLTRB(35, 10, 0, 5)),
-                MyGridView(),
-              ],
-            ),
+        child: Container(
+          child: Column(
+            children: [
+              MyDivider(
+                indent: 10,
+                endIndent: 10,
+              ),
+              MyCarousel(),
+              MyDivider(
+                indent: 30,
+                endIndent: 30,
+              ),
+              MyText(
+                  data: 'Recommendation',
+                  size: 18,
+                  margin: EdgeInsets.fromLTRB(35, 10, 0, 5)),
+              MyGridView(),
+            ],
           ),
         ),
       ),
