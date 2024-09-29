@@ -14,8 +14,7 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Connecting controller dengan ui
-    final DashboardController dashboardController =
-        Get.put(DashboardController());
+    final DashboardController dashboardController = Get.find();
 
     final List<Widget> menus = [
       HomeMenu(),
@@ -27,6 +26,22 @@ class DashboardPage extends StatelessWidget {
     return Obx(() {
       return Scaffold(
         backgroundColor: Color(0xff222831),
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          toolbarHeight: 45,
+          centerTitle: true,
+          backgroundColor: Color(0xff222831),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Image.asset(
+                'assets/logo.png',
+                fit: BoxFit.fitHeight,
+                height: 30,
+              ),
+            ],
+          ),
+        ),
         body: menus[dashboardController.selectedIndex.value],
         bottomNavigationBar: SizedBox(
           height: 60,

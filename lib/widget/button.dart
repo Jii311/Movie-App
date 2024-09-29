@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String label;
+  final double width;
   final double fontSize;
   final EdgeInsetsGeometry contentPadding;
   final EdgeInsetsGeometry margin;
@@ -13,14 +14,14 @@ class MyButton extends StatelessWidget {
       required this.label,
       required this.fontSize,
       required this.contentPadding,
-      required this.margin});
+      required this.margin, required this.width});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: margin,
-      width: 340,
       padding: contentPadding,
+      width: width,
       child: ElevatedButton(
           onPressed: onPressed,
           style: ButtonStyle(
