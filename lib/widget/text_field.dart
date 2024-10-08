@@ -9,6 +9,7 @@ class MyTextField extends StatelessWidget {
   final String hintText;
   final String labelText;
   final IconData icon;
+  final double width;
 
   const MyTextField({
     super.key,
@@ -17,13 +18,13 @@ class MyTextField extends StatelessWidget {
     required this.hintText,
     required this.labelText,
     required this.margin,
-    required this.icon,
+    required this.icon, required this.width,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 340,
+      width: width,
       margin: margin,
       child: TextField(
           cursorHeight: 20,

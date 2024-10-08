@@ -12,7 +12,6 @@ class ListViewAdapter extends StatelessWidget {
     return ListView.builder(
       itemCount: listViewList.length,
       itemBuilder: (BuildContext context, int index) {
-        final movie = listViewList[index];
         return GestureDetector(
           onTap: () => {},
           child: Container(
@@ -26,12 +25,9 @@ class ListViewAdapter extends StatelessWidget {
             child: Row(
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(5),
-                    bottomLeft: Radius.circular(5),
-                  ),
+                  borderRadius: BorderRadius.circular(5),
                   child: Image.asset(
-                    movie.image,
+                    listViewList[index].image,
                     width: 160,
                     height: 90,
                     scale: 16 / 9,
@@ -45,7 +41,7 @@ class ListViewAdapter extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        movie.title,
+                        listViewList[index].title,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                             color: Color(0xffEEEEEE),
@@ -63,7 +59,7 @@ class ListViewAdapter extends StatelessWidget {
                           ),
                           SizedBox(width: 5),
                           Text(
-                            movie.rating,
+                            listViewList[index].rating,
                             style: TextStyle(
                                 color: Color(0xffEEEEEE),
                                 fontSize: 14,
@@ -73,7 +69,7 @@ class ListViewAdapter extends StatelessWidget {
                       ),
                       SizedBox(height: 5),
                       Text(
-                        movie.genre,
+                        listViewList[index].genre,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                             color: Color(0xffEEEEEE),
@@ -82,15 +78,6 @@ class ListViewAdapter extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 5, right: 5),
-                  alignment: Alignment.bottomRight,
-                  child: Icon(
-                    Icons.favorite,
-                    color: Colors.red[700],
-                    size: 20,
-                  ),
-                )
               ],
             ),
           ),

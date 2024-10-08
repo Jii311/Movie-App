@@ -7,6 +7,7 @@ import 'package:movie_app/pages/bottom_menu/favourite.dart';
 import 'package:movie_app/pages/bottom_menu/home.dart';
 import 'package:movie_app/pages/bottom_menu/profile.dart';
 import 'package:movie_app/pages/bottom_menu/search.dart';
+import 'package:movie_app/widget/divider.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -56,14 +57,13 @@ class DashboardPage extends StatelessWidget {
               onTap: dashboardController.changeMenu,
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.home_outlined), label: "Home"),
+                    icon: Icon(Icons.home_rounded), label: "Home"),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.search), label: "Search"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.favorite_border_outlined),
-                    label: "Favourite"),
+                    icon: Icon(Icons.favorite_rounded), label: "Favourite"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.person_2_outlined), label: "Profile")
+                    icon: Icon(Icons.person_2_rounded), label: "Profile")
               ]),
         ),
       );

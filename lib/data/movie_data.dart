@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:movie_app/models/carousel_model.dart';
+import 'package:movie_app/models/genre_model.dart';
 import 'package:movie_app/models/gridview_model.dart';
 import 'package:movie_app/models/listview-model.dart';
 
@@ -121,4 +121,16 @@ final List<ListViewModel> listViewList = [
       title: 'The Marvels',
       rating: '8.6',
       genre: 'Action, Superhero'),
+];
+
+final List<GenreModel> genreList = [
+  GenreModel(genres: 'Romance'),
+  GenreModel(genres: 'Action'),
+  GenreModel(genres: 'Sci-Fi'),
+  GenreModel(genres: 'Comedy'),
+  GenreModel(genres: 'Animation'),
+  GenreModel(genres: 'Horror'),
+  GenreModel(genres: 'Drama'),
+  GenreModel(genres: 'Fantasy'),
+  GenreModel(genres: 'Mystery'),
 ];

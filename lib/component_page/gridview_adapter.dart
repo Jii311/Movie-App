@@ -16,6 +16,7 @@ class MovieAdapter extends StatelessWidget {
       child: Column(
         children: [
           Container(
+            margin: EdgeInsets.all(5),
             decoration: BoxDecoration(
               color: Color(0xff222831),
               borderRadius: BorderRadius.circular(5),
@@ -23,21 +24,6 @@ class MovieAdapter extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.all(Radius.circular(5)),
               child: Image.asset(gridViewList.image),
-            ),
-          ),
-          Flexible(
-            child: Container(
-              margin: EdgeInsets.fromLTRB(5, 5, 5, 0),
-              alignment: Alignment.topLeft,
-              child: Text(
-                gridViewList.title,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xffEEEEEE),
-                ),
-              ),
             ),
           ),
           Row(
@@ -62,6 +48,21 @@ class MovieAdapter extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              alignment: Alignment.topLeft,
+              child: Text(
+                gridViewList.title,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xffEEEEEE),
+                ),
+              ),
+            ),
           ),
         ],
       ),

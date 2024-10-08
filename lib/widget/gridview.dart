@@ -14,7 +14,7 @@ class MyGridView extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: 16,
         crossAxisSpacing: 16,
-        mainAxisExtent: 285,
+        mainAxisExtent: 280,
       ),
       itemBuilder: (context, index) {
         return MovieAdapter(gridViewList: gridViewList[index]);

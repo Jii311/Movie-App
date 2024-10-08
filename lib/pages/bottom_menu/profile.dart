@@ -3,6 +3,7 @@ import 'package:movie_app/widget/button.dart';
 import 'package:movie_app/widget/divider.dart';
 import 'package:movie_app/widget/listtile.dart';
 import 'package:movie_app/widget/text.dart';
+import 'package:get/get.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({super.key});
@@ -59,7 +60,9 @@ class ProfileMenu extends StatelessWidget {
                   onTap: () {},
                 ),
                 MyButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('/');
+                  },
                   label: 'Log Out',
                   fontSize: 12,
                   contentPadding: EdgeInsets.all(0),

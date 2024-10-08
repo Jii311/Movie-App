@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/widget/divider.dart';
 import 'package:movie_app/widget/gridview.dart';
+import 'package:movie_app/widget/listview_genre.dart';
 import 'package:movie_app/widget/text.dart';
 import 'package:movie_app/widget/text_field.dart';
 
@@ -23,7 +24,14 @@ class SearchMenu extends StatelessWidget {
                 labelText: '',
                 margin: EdgeInsets.fromLTRB(20, 5, 20, 10),
                 icon: Icons.search_outlined,
+                width: 360,
               ),
+              MyText(
+                  data: 'Genre',
+                  size: 18,
+                  margin: EdgeInsets.fromLTRB(35, 10, 0, 5)),
+              MyListViewGenre(),
+              MyDivider(indent: 0, endIndent: 0),
               MyText(
                   data: 'Recent Search',
                   size: 18,

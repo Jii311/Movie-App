@@ -49,7 +49,8 @@ class _LoginPageState extends State<LoginPage> {
               hintText: 'Username',
               labelText: 'Username',
               margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
-              icon: Icons.person_outline_sharp,
+              icon: Icons.person_2_rounded,
+              width: 340,
             ),
             MyTextField(
               controller: _passcontroller,
@@ -57,12 +58,13 @@ class _LoginPageState extends State<LoginPage> {
               hintText: 'Password',
               labelText: 'Password',
               margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
-              icon: Icons.shield_outlined,
+              icon: Icons.shield_rounded,
+              width: 340,
             ),
             MyButton(
               onPressed: () {
-                if (_usercontroller.text == 'admin' &&
-                    _passcontroller.text == 'admin') {
+                if (_usercontroller.text == 'a' &&
+                    _passcontroller.text == 'a') {
                   Get.toNamed('/dashboard');
                 } else {
                   showDialog<String>(
@@ -83,7 +85,8 @@ class _LoginPageState extends State<LoginPage> {
               label: 'Login',
               fontSize: 18,
               contentPadding: EdgeInsets.fromLTRB(0, 12, 0, 25),
-              margin: EdgeInsets.fromLTRB(0, 50, 0, 0), width: 340,
+              margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
+              width: 340,
             )
           ],
         ),
